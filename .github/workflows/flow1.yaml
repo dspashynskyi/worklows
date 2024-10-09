@@ -1,0 +1,10 @@
+on:
+  workflow_call:
+
+jobs:
+  flow1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check repository owner
+        run: |
+          echo "test"
