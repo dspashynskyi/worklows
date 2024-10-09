@@ -13,5 +13,5 @@ jobs:
       - name: simple job
         run: |
           echo "test"
-          echo ${{ inputs.gitlab-project-id }}
+          echo ${{ inputs.repo_name }}
           echo "test2"
