@@ -5,6 +5,6 @@ jobs:
   flow1:
     runs-on: ubuntu-latest
     steps:
-      - name: Check repository owner
+      - name: simple job
         run: |
           echo "test"
