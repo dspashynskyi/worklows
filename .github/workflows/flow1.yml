@@ -1,5 +1,10 @@
 on:
   workflow_call:
+    inputs:
+      repo_name:
+        required: true
+        description: "name of trigger repository"
+        type: string
 
 jobs:
   flow1:
@@ -8,3 +13,4 @@ jobs:
       - name: simple job
         run: |
           echo "test"
+          echo ${{ inputs.gitlab-project-id }}
