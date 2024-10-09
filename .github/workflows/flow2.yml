@@ -1,0 +1,10 @@
+on:
+  workflow_call:
+
+jobs:
+  flow2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: simple job
+        run: |
+          echo "test"
